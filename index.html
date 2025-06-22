@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title>Dynamique de l'érosion côtière au TOGO_1984 -2025</title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+<script src="resources/proj4.js"></script>
+        <script>proj4.defs('EPSG:32631','+proj=utm +zone=31 +datum=WGS84 +units=m +no_defs');</script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="layers/Superficie_accumulekm_0.js"></script><script src="layers/Superficie_rodekm_1.js"></script><script src="layers/Cantons_Littoral_3.js"></script><script src="layers/TOGO_4.js"></script><script src="layers/protection_5.js"></script><script src="layers/Epis_6.js"></script><script src="layers/HOT_SPOT_7.js"></script><script src="layers/Taux_LRRman_8.js"></script><script src="layers/protection_9.js"></script><script src="layers/Epis_10.js"></script><script src="layers/HOT_SPOT_11.js"></script><script src="layers/Taux_EPRman_12.js"></script><script src="layers/protection_13.js"></script><script src="layers/Epis_14.js"></script><script src="layers/protection_15.js"></script><script src="layers/Epis_16.js"></script><script src="layers/Taux_EPRman_17.js"></script><script src="layers/protection_18.js"></script><script src="layers/Epis_19.js"></script><script src="layers/Taux_EPRman_20.js"></script><script src="layers/protection_21.js"></script><script src="layers/Epis_22.js"></script><script src="layers/HOT_SPOT_23.js"></script><script src="layers/TauxEPR_24.js"></script><script src="layers/Taux_EPRman_25.js"></script><script src="layers/Epis_26.js"></script><script src="layers/protection_27.js"></script><script src="layers/HOT_SPOT_28.js"></script><script src="layers/Taux_EPRman_29.js"></script><script src="layers/2025_30.js"></script><script src="layers/2020_31.js"></script><script src="layers/2015_32.js"></script><script src="layers/2010_33.js"></script><script src="layers/2005_34.js"></script><script src="layers/2000_35.js"></script><script src="layers/1990_36.js"></script><script src="layers/1984_37.js"></script>
+        <script src="styles/Superficie_accumulekm_0_style.js"></script><script src="styles/Superficie_rodekm_1_style.js"></script><script src="styles/Cantons_Littoral_3_style.js"></script><script src="styles/TOGO_4_style.js"></script><script src="styles/protection_5_style.js"></script><script src="styles/Epis_6_style.js"></script><script src="styles/HOT_SPOT_7_style.js"></script><script src="styles/Taux_LRRman_8_style.js"></script><script src="styles/protection_9_style.js"></script><script src="styles/Epis_10_style.js"></script><script src="styles/HOT_SPOT_11_style.js"></script><script src="styles/Taux_EPRman_12_style.js"></script><script src="styles/protection_13_style.js"></script><script src="styles/Epis_14_style.js"></script><script src="styles/protection_15_style.js"></script><script src="styles/Epis_16_style.js"></script><script src="styles/Taux_EPRman_17_style.js"></script><script src="styles/protection_18_style.js"></script><script src="styles/Epis_19_style.js"></script><script src="styles/Taux_EPRman_20_style.js"></script><script src="styles/protection_21_style.js"></script><script src="styles/Epis_22_style.js"></script><script src="styles/HOT_SPOT_23_style.js"></script><script src="styles/TauxEPR_24_style.js"></script><script src="styles/Taux_EPRman_25_style.js"></script><script src="styles/Epis_26_style.js"></script><script src="styles/protection_27_style.js"></script><script src="styles/HOT_SPOT_28_style.js"></script><script src="styles/Taux_EPRman_29_style.js"></script><script src="styles/2025_30_style.js"></script><script src="styles/2020_31_style.js"></script><script src="styles/2015_32_style.js"></script><script src="styles/2010_33_style.js"></script><script src="styles/2005_34_style.js"></script><script src="styles/2000_35_style.js"></script><script src="styles/1990_36_style.js"></script><script src="styles/1984_37_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
